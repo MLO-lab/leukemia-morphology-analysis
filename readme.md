@@ -15,7 +15,7 @@ This repo contains a complete, reproducible pipeline to:
 python segment_cells_refactored.py /path/to/resources.txt
 
 # 2) Extract features (from a TXT resources file)
-python Image_Features_Extraction_cif.py /path/to/resources_features.txt
+python SkImage_Image_Features_Extraction_cif.py /path/to/resources_features.txt
 python Pyfeats_Image_Features_Extraction_cif.py /path/to/resources_features.txt
 
 # 3) Predict (XGBoost)
