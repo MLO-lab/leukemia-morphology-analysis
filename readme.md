@@ -168,7 +168,7 @@ n_workers=4
 
 ### Run
 ```bash
-python Image_Features_Extraction_cif.py /path/to/resources_features.txt
+python SkImage_Image_Features_Extraction_cif.py /path/to/resources_features.txt
 python Pyfeats_Image_Features_Extraction_cif.py /path/to/resources_features.txt
 ```
 
