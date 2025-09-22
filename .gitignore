@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+env/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
+# build/outputs
+Png_images/
+Tiff_images/
+*.log

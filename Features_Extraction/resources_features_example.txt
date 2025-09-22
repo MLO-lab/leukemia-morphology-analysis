@@ -1,0 +1,27 @@
+# resources_features.txt (v4 example)
+# -----------------------------------
+# Root of segmented TIFF images (the "Tiff_images" directory produced by segmentation)
+images_path=/absolute/path/to/Segmented_images_CellPose/Tiff_images
+# Where to write the per-(experiment,subfolder) CSVs
+features_export_path=/absolute/path/to/Features_Output
+
+# Experiments to traverse (top-level folders under images_path). Comma-separated.
+experiments_types=WT control experiment,Another experiment
+
+# Channel tags to detect roles from filenames (post-segmentation names already contain these tokens by default)
+bf_tags=BF
+nucleus_tags=Nucleus
+df_tags=DF
+
+# Optional extra roles beyond BF/DF/Nucleus. For each role, also provide "<role>_tags"
+# additional_roles=Actin,Ch2
+# Actin_tags=Actin
+# Ch2_tags=Ch2
+
+# Skimage regionprops (optional; comma-separated). Leave empty to use defaults.
+# properties_list=area,eccentricity,equivalent_diameter_area,extent,perimeter,solidity,axis_major_length,axis_minor_length,orientation,intensity_mean,intensity_min,intensity_max,centroid
+
+# Pyfeats backend in "module:function" form (must be importable)
+pyfeats_backend=pyfeats_script:Pyfeats_Features_Extraction
+# Parallel workers for pyfeats
+n_workers=4

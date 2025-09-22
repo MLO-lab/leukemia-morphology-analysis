@@ -1,0 +1,46 @@
+# resources.txt (v4.2 example)
+# Required
+path_for_raw_images=/absolute/path/to/Raw_images
+experiments_types=Human normal donors
+save_path_segmented_images=/absolute/path/to/Segmented_images_CellPose
+
+# Channel tags (these define which channels belong to a set; filenames must contain one of these tags)
+bf_tags=BF,Ch1
+nucleus_tags=Nucleus,Ch5
+df_tags=DF,Ch6
+
+# Optional extra channels (each processed like BF; add <role>_tags to define their membership)
+# additional_roles=Ch2,Actin
+# Ch2_tags=Ch2
+# Actin_tags=Actin
+
+# Controls
+gpu=true
+dry_run=false
+use_optional_fallback=true
+
+# Cellpose models & diameters
+model_cyto=cyto3
+model_nuclei=nuclei
+diameters_df=16,15,14,13,12
+diameters_bf=16,15,14,13,12
+diameters_nucleus=13,12,11,10
+diameters_additional=16,15,14,13,12
+
+# Post-filter thresholds
+axis_ratio_thresh_df=1.6
+axis_ratio_thresh_nucleus=1.7
+area_min_df=100
+area_min_nucleus=80
+area_min_additional=100
+
+# Log base names (actual files get suffixed with _<run>.txt or .csv)
+log_corrupted=fallback_segmentation_warning
+log_error=segmentation_failed
+log_area_flagged=area_flagged_corrupted_segmentations_paths_New
+log_channels_unavailability=channels_unavailability
+log_already_processed=already_processed_sets
+log_planned_outputs=planned_outputs
+log_dry_report=dry_run_report
+log_success=successful_segmentations
+manifest_base=manifest
