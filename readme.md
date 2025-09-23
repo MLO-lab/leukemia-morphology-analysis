@@ -269,5 +269,3 @@ repo/
 - scikit-image for regionprops
 - XGBoost for classification
 
-If you want CI commands, Dockerfile, or a `requirements.txt`, say the word and I’ll add them.
-
