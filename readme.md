@@ -34,7 +34,7 @@ python prediction.py \
 - **Segmentation**: `cellpose` (GPU optional)
 - **Pyfeats features**: an importable backend function (see below) and `concurrent.futures` (standard library)
 
-> Tip: create a virtual environment and `pip install -r requirements.txt` (you can export one from your working env).
+> Tip: create a virtual environment and `pip install -r requirements.txt` (to be added).
 
 ---
 
