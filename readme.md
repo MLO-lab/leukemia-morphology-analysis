@@ -246,26 +246,9 @@ python prediction.py \
 
 ---
 
-## Suggested Repo Layout
-
-```
-repo/
-  segment_cells_refactored.py
-  Image_Features_Extraction_cif.py
-  Pyfeats_Image_Features_Extraction_cif.py
-  prediction.py
-  resources.txt                      # segmentation
-  resources_features.txt             # feature extraction
-  README.md
-```
-
-> Keep your model checkpoints (e.g., `xgb_checkpoint.pkl`) outside of version control if they’re large.
-
----
-
 ## Acknowledgements
 
-- Cellpose for segmentation
-- scikit-image for regionprops
-- XGBoost for classification
+- Cellpose for segmentation (www.github.com/mouseland/cellpose)
+- scikit-image for regionprops (https://scikit-image.org/docs/0.25.x/api/skimage.measure.html)
+- XGBoost for classification (https://doi.org/10.48550/arXiv.1603.02754)
 
